@@ -1,8 +1,8 @@
 import os
 import random 
  
-xmlfilepath=r'./VOCdevkit/VOC2007/Annotations'
-saveBasePath=r"./VOCdevkit/VOC2007/ImageSets/Main/"
+xmlfilepath=r'/content/A05-Data/VOCdevkit/VOC2007/Annotations'
+saveBasePath=r"/content/A05-Data/VOCdevkit/VOC2007/ImageSets/Main/"
  
 trainval_percent=1
 train_percent=1
