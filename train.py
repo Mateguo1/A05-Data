@@ -133,12 +133,12 @@ set_session(tf.Session(config=config))
 
 if __name__ == "__main__":
     # 标签的位置
-    annotation_path = '2007_train.txt'
+    annotation_path = '/content/2007_train.txt'
     # 获取classes和anchor的位置
-    classes_path = 'model_data/voc_classes.txt'    
-    anchors_path = 'model_data/yolo_anchors.txt'
+    classes_path = '/content/A05-Data/model_data/voc_classes.txt'    
+    anchors_path = '/content/A05-Data/model_data/yolo_anchors.txt'
     # 预训练模型的位置
-    weights_path = 'model_data/yolo_weights.h5'
+    weights_path = '/content/A05-Data/model_data/yolo_weights.h5'
     # 获得classes和anchor
     class_names = get_classes(classes_path)
     anchors = get_anchors(anchors_path)
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     num_classes = len(class_names)
     num_anchors = len(anchors)
     # 训练后的模型保存的位置
-    log_dir = 'logs/'
+    log_dir = '/content/A05-Data/logs/'
     # 输入的shape大小
     input_shape = (416,416)
 
