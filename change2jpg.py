@@ -7,7 +7,7 @@ import os
 # print('----------------------------------------------------')
 # print('')
  
-path = './VOCdevkit\VOC2007/JPEGImages'
+path = './VOCdevkit/VOC2007/JPEGImages'
  
 # if not os.path.exists(newpath):
 #     os.mkdir(newpath)
