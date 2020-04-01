@@ -7,7 +7,7 @@ import os
 # print('----------------------------------------------------')
 # print('')
  
-path = './VOCdevkit\VOC2007/JPEGImages'
+path = './VOCdevkit/VOC2007/JPEGImages/'
  
 # if not os.path.exists(newpath):
 #     os.mkdir(newpath)
@@ -18,11 +18,11 @@ path_list=os.listdir(path)
 for filename in path_list:
     if filename[-4:] == '.JPG':
         print(filename)
+        # src = cv.imread(path+filename)
+        # cv.imwrite(path+filename[:-4]+'.jpg',src)
+
 #     portion = os.path.splitext(filename)
 #     print('convert  ' + filename +'  to '+portion[0]+'.jpg')
-#     src = cv.imread(path+filename)
-#     cv.imwrite(newpath+'\\'+portion[0]+'.jpg',src)
- 
 # print('转换完毕，文件存入 '+newpath+' 中')
 # cv.waitKey(0)
 # cv.destroyAllWindows()
